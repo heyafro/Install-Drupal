@@ -87,7 +87,7 @@ DROP USER IF EXISTS ''@'$(hostname)';
 DROP DATABASE IF EXISTS test;
 CREATE DATABASE drupal;
 CREATE USER 'drupal'@'localhost' IDENTIFIED BY '$drupal_sql_pass';
-GRANT ALL PRIVILEGES ON drupal.* TO 'drupal'@'localhost';
+GRANT ALL ON drupal.* TO 'drupal'@'localhost';
 FLUSH PRIVILEGES;
 EOF
 }
