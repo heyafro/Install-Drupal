@@ -1,8 +1,10 @@
 #!/bin/bash
+
+domain=your.domain.com
+ip_addr=any # set to 'any' if you want to allow ssh access from anyone... or csv ip addresses for multiple ips
+
 date=$(date)
 log_file=/var/log/install-lamp.log
-ip_addr=any # set to 'any' if you want to allow ssh access from anyone... or csv ip addresses for multiple ips
-domain=your.domain.com
 web_dir=/var/www/$domain
 sites_dir=/etc/apache2/sites-available
 sites_file=$domain.conf
