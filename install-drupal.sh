@@ -86,8 +86,8 @@ DELETE FROM mysql.user WHERE User='';
 DROP USER IF EXISTS ''@'$(hostname)';
 DROP DATABASE IF EXISTS test;
 CREATE DATABASE drupal;
-CREATE USER 'drupal'@'$(hostname)' IDENTIFIED BY '$drupal_sql_pass';
-GRANT ALL PRIVILEGES ON drupal.* TO 'drupal'@'$(hostname)';
+CREATE USER 'drupal'@'localhost' IDENTIFIED BY '$drupal_sql_pass';
+GRANT ALL PRIVILEGES ON drupal.* TO 'drupal'@'localhost';
 FLUSH PRIVILEGES;
 EOF
 }
