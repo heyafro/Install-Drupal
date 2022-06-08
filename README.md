@@ -43,3 +43,5 @@ sudo rm -rvf /var/www/<DOMAIN NAME HERE>/index.html
 **CONGRATS! DRUPAL 9 IS NOW SUCCESSFULLY INSTALLED!**
 
 If any errors are encountered, make sure to view the logfile for more in-depth information. This script will store everything in `/var/log/install-drupal.log`.
+
+PLEASE NOTE: No passwords will be stored in the logfile, so be sure to store your passwords in a secure place.
