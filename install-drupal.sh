@@ -3,7 +3,7 @@
 domain=your.domain.com
 
 date=$(date)
-log_file=/var/log/install-lamp.log
+log_file=/var/log/install-drupal.log
 web_dir=/var/www/$domain
 sites_dir=/etc/apache2/sites-available
 sites_file=$domain.conf
