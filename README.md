@@ -34,3 +34,12 @@ YOUR DRUPAL MYSQL PASSWORD IS: <SOME RANDOM LETTERS AND NUMBERS>
 ```
 Make sure to record these passwords at the end of the script and **DO NOT LOSE THEM**.  They are needed for root access to MySQL and Drupal's access the MySQL.  The Drupal MySQL Password is need in the next steps for installation.
 
+Now that the initial setup has completed, if someone where to navigate to the IP address of the server in their browser - they'll be immediate redirected to the domain name specified in the first steps of this document.  This is because a default `index.html` file has been created as a redirect while the final stages of the Drupal install takes place. 
+
+Navigate to `http://<SERVER ADDRESS HERE>/index.php` and follow the Drupal installation steps in a browser. When this is completed succesfully, remove the `index.html` file from the website's directory in Apache on your server:
+```
+sudo rm -rvf /var/www/<DOMAIN NAME HERE>/index.html
+```
+**CONGRATS! DRUPAL 9 IS NOW SUCCESSFULLY INSTALLED!**
+
+If any errors are encountered, make sure to view the logfile for more in-depth information. This script will store everything in `/var/log/install-drupal.log`.
