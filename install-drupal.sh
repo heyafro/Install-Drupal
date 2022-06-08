@@ -73,8 +73,9 @@ finalize_apache() {
 }
 
 config_firewall() {
-    ufw allow proto tcp from any port 80,443 &&
-    ufw allow proto tcp from $ip_addr port 22 &&
+    ufw allow http &&
+    ufw allow https &&
+    ufw allow OpenSSH &&
     ufw enable
 }
 
