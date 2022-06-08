@@ -137,6 +137,5 @@ sed -i "s/$drupal_sql_pass/PasswordNotStoredInLogfile/g" $log_file
 echo
 echo "Installing Drupal 9..."
 install_drupal >> $log_file 2>&1
-config_mysql >> $log_file 2>&1
 echo "YOUR MYSQL PASSWORD IS: $mysql_pass"
 echo "YOUR DRUPAL MYSQL PASSWORD IS: $drupal_sql_pass"
