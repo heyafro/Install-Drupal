@@ -1,5 +1,5 @@
 #!/bin/bash
-
+sudo apt update
 domain=your.domain.com
 
 date=$(date)
